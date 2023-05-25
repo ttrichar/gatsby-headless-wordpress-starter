@@ -1,22 +1,22 @@
-name: { { Name } }
+name: Gatsby Build/Release
 
 on:
   push:
-    branches: [{ { Branches } }]
+    branches: [main]
   pull_request:
-    branches: [{ { Branches } }]
+    branches: [main]
   workflow_dispatch:
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: { { Branches } }
-  MainBranch: { { MainBranch } }
-  NPMRegistry: { { NPMRegistry } }
-  InstallCommand: { { InstallCommand } }
-  BuildCommand: { { BuildCommand } }
-  Output: { { Output } }
+  Branches: main
+  MainBranch: main
+  NPMRegistry: https://registry.npmjs.org/
+  InstallCommand: npm ci
+  BuildCommand: npm run build
+  Output: ./public
 
 jobs:
   build:
