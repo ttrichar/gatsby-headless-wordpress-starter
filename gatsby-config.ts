@@ -13,6 +13,11 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-wordpress',
       options: {
+        schema: {
+          perPage: 20,
+          requestConcurrency: 5,
+          previewRequestConcurrency: 2,
+        },
         url: 'https://305b17db3e76-shared.lowcodeunit.com/graphql',
       },
     },
