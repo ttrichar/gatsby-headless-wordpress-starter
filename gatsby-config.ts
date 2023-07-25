@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
           requestConcurrency: 5,
           previewRequestConcurrency: 2,
         },
-        url: 'https://305b17db3e76-shared.lowcodeunit.com/graphql',
+        url: 'https://87dc7d402c63-shared.lowcodeunit.com/graphql',
       },
     },
     'gatsby-plugin-image',
